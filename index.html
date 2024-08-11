@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorado National Monuments Timeline</title>
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
+</head>
+<body>
+    <div id="map-container" style="width: 100%; height: 600px;"></div>
+
+    <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
+    <script>
+        var storymap_data = {
+            storymap: {
+                slides: [
+                    {
+                        type: "overview",
+                        text: {
+                            headline: "Timeline of Colorado's National Monuments",
+                            text: "<p>This StoryMap explores the history and significance of Colorado's nine national monuments.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Map_of_Colorado_NA.png/800px-Map_of_Colorado_NA.png",
+                            credit: "Wikimedia Commons",
+                            caption: "Map of Colorado"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Browns Canyon National Monument",
+                            lat: 38.7082,
+                            lon: -106.0981,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Browns Canyon National Monument",
+                            text: "<p>Browns Canyon was designated as a national monument in 2015. It protects a rugged and scenic stretch of the Arkansas River and surrounding wilderness.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Browns_Canyon_National_Monument.jpg/1280px-Browns_Canyon_National_Monument.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Browns Canyon National Monument"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Colorado National Monument",
+                            lat: 39.0639,
+                            lon: -108.7217,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Colorado National Monument",
+                            text: "<p>Designated in 1911, Colorado National Monument features stunning red rock formations and deep canyons, offering a striking example of the Colorado Plateau's rugged beauty.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Monument_Canyon%2C_Colorado_National_Monument.jpg/1280px-Monument_Canyon%2C_Colorado_National_Monument.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Monument Canyon, Colorado National Monument"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Chimney Rock National Monument",
+                            lat: 37.1786,
+                            lon: -107.3189,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Chimney Rock National Monument",
+                            text: "<p>Chimney Rock was designated as a national monument in 2012. It preserves a site of great archaeological significance to the ancestral Puebloans.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chimney_Rock_National_Monument.jpg/1280px-Chimney_Rock_National_Monument.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Chimney Rock National Monument"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Canyons of the Ancients National Monument",
+                            lat: 37.3614,
+                            lon: -108.7807,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Canyons of the Ancients National Monument",
+                            text: "<p>Canyons of the Ancients, designated in 2000, contains the highest known density of archaeological sites in the United States, preserving the remnants of ancient Native American cultures.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Canyons_of_the_Ancients_-_Lowry_Ruins.jpg/1280px-Canyons_of_the_Ancients_-_Lowry_Ruins.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Lowry Ruins, Canyons of the Ancients National Monument"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Dinosaur National Monument",
+                            lat: 40.4406,
+                            lon: -108.9947,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Dinosaur National Monument",
+                            text: "<p>Established in 1915, Dinosaur National Monument is renowned for its fossil beds, offering a glimpse into the ancient life that once roamed this area.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Dinosaur_National_Monument.jpg/1280px-Dinosaur_National_Monument.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Dinosaur National Monument"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Florissant Fossil Beds National Monument",
+                            lat: 38.9123,
+                            lon: -105.2869,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Florissant Fossil Beds National Monument",
+                            text: "<p>Designated in 1969, Florissant Fossil Beds National Monument preserves one of the richest fossil deposits in the world, including detailed fossils of insects and plants.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Fossil_of_a_lake_at_the_Florissant_Fossil_Beds.jpg/1280px-Fossil_of_a_lake_at_the_Florissant_Fossil_Beds.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Fossil of a lake at Florissant Fossil Beds"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Hovenweep National Monument",
+                            lat: 37.3831,
+                            lon: -109.0707,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Hovenweep National Monument",
+                            text: "<p>Hovenweep, designated in 1923, protects six prehistoric villages built by the Ancestral Puebloans, known for their square, round, and D-shaped towers.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Hovenweep_-_Square_Tower_Group.jpg/1280px-Hovenweep_-_Square_Tower_Group.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Square Tower Group, Hovenweep National Monument"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Yucca House National Monument",
+                            lat: 37.2500,
+                            lon: -108.7500,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Yucca House National Monument",
+                            text: "<p>Designated in 1919, Yucca House National Monument preserves a large unexcavated Ancestral Puebloan site, offering insights into the region's ancient cultures.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Yucca_House_National_Monument.jpg/1280px-Yucca_House_National_Monument.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Yucca House National Monument"
+                        }
+                    },
+                    {
+                        type: "slide",
+                        location: {
+                            name: "Camp Hale-Continental Divide National Monument",
+                            lat: 39.3833,
+                            lon: -106.3147,
+                            zoom: 12
+                        },
+                        text: {
+                            headline: "Camp Hale-Continental Divide National Monument",
+                            text: "<p>Camp Hale-Continental Divide National Monument, designated in 2022, honors the legacy of the 10th Mountain Division, a U.S. Army unit that trained for mountain and winter warfare during World War II.</p>"
+                        },
+                        media: {
+                            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Camp_Hale.jpg/1280px-Camp_Hale.jpg",
+                            credit: "Wikimedia Commons",
+                            caption: "Camp Hale, Colorado"
+                        }
+                    }
+                ]
+            }
+        };
+
+        var storymap = new VCO.StoryMap('map-container', storymap_data);
+        window.onresize = function() {
+            storymap.updateDisplay(); // this keeps the map responsive
+        };
+    </script>
+</body>
