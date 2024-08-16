@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colorado National Monuments Timeline</title>
     <link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map-container {
+            width: 100%;
+            height: 100vh; /* Fill the full viewport height */
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <div id="map-container" style="width: 100%; height: 600px;"></div>
+    <div id="map-container"></div>
 
     <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
     <script>
@@ -21,9 +35,9 @@
                             text: "<p>This StoryMap explores the history and significance of Colorado's nine national monuments.</p>"
                         },
                         media: {
-                            url: "images/Colorado_relief_map.jpg",
-                            credit: "SANtosito CC BY-SA 4.0",
-                            caption: "Map of Colorado"
+                            url: "images/Independence_monument.jpg",
+                            credit: "Daniel Schwen, CC BY-SA 4.0 ",
+                            caption: "Independence monument in Colorado National Monument with Fruita, Colorado in the background"
                         }
                     },
                     {
@@ -192,9 +206,84 @@
                             credit: "National Archives and Records Administration, Public domain",
                             caption: "Top of the Rockies - Mountain Backdrop at Camp Hale Memorial"
                         }
-                    }
-                ]
-            }
+                    },
+                    {
+    type: "slide",
+    location: {
+        name: "Rocky Mountain National Park",
+        lat: 40.3428,
+        lon: -105.6836,
+        zoom: 10
+    },
+    text: {
+        headline: "Rocky Mountain National Park",
+        text: "<p>Rocky Mountain National Park was originally designated as Estes Park National Monument in 1915. It became a national park later that year. The park is known for its stunning alpine scenery and diverse ecosystems.</p>"
+    },
+    media: {
+        url: "images/Never_Summer_Mountains.jpg", 
+        credit: "Ken Lund CC BY-SA 2.0",
+        caption: "Rocky Mountain National Park, Never Summer Mountain"
+    }
+},
+{
+    type: "slide",
+    location: {
+        name: "Great Sand Dunes National Park and Preserve",
+        lat: 37.7926,
+        lon: -105.5943,
+        zoom: 10
+    },
+    text: {
+        headline: "Great Sand Dunes National Park and Preserve",
+        text: "<p>Great Sand Dunes was originally established as a national monument in 1932. It became a national park in 2004, protecting the tallest sand dunes in North America as well as the surrounding diverse landscape of grasslands, wetlands, and forests.</p>"
+    },
+    media: {
+        url: "images/great-sand-dunes.jpg", // Replace with your actual image URL
+        credit: "Photo by John Doe", // Replace with the actual artist's name
+        caption: "Great Sand Dunes National Park and Preserve",
+        thumbnail: "images/great-sand-dunes-thumbnail.jpg" // Replace with your actual thumbnail URL
+    }
+    },
+    {
+        type: "slide",
+        location: {
+            name: "Black Canyon of the Gunnison National Park",
+            lat: 38.5754,
+            lon: -107.7412,
+            zoom: 10
+        },
+        text: {
+            headline: "Black Canyon of the Gunnison National Park",
+            text: "<p>Black Canyon of the Gunnison was originally designated as a national monument in 1933. It became a national park in 1999. The park is known for its steep, dramatic canyon walls and diverse ecosystems.</p>"
+        },
+        media: {
+            url: "images/black-canyon.jpg", // Replace with your actual image URL
+            credit: "Photo by John Doe", // Replace with the actual artist's name
+            caption: "Black Canyon of the Gunnison National Park",
+            thumbnail: "images/black-canyon-thumbnail.jpg" // Replace with your actual thumbnail URL
+        }
+    },
+    {
+        type: "slide",
+        location: {
+            name: "Mesa Verde National Park",
+            lat: 37.2309,
+            lon: -108.4618,
+            zoom: 10
+        },
+        text: {
+            headline: "Mesa Verde National Park",
+            text: "<p>Mesa Verde was designated as a national monument in 1906, the first of its kind to protect the cultural heritage of the ancestral Puebloans. It became a national park later that year and is renowned for its well-preserved cliff dwellings.</p>"
+        },
+        media: {
+            url: "images/mesa-verde.jpg", // Replace with your actual image URL
+            credit: "Photo by John Doe", // Replace with the actual artist's name
+            caption: "Mesa Verde National Park",
+            thumbnail: "images/mesa-verde-thumbnail.jpg" // Replace with your actual thumbnail URL
+        }
+}
+        ]
+        }
         };
 
         var storymap = new VCO.StoryMap('map-container', storymap_data);
@@ -203,3 +292,4 @@
         };
     </script>
 </body>
+</html>
